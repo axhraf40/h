@@ -1,5 +1,4 @@
 <?php
-// database/seeders/PropertySeeder.php
 namespace Database\Seeders;
 
 use App\Models\Property;
