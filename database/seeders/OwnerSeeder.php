@@ -1,5 +1,4 @@
 <?php
-// database/seeders/OwnerSeeder.php
 namespace Database\Seeders;
 
 use App\Models\Owner;
