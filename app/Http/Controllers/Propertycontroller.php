@@ -13,10 +13,6 @@ class PropertyController extends Controller
         return view('properties.index', compact('properties'));
     }
 
-    public function create()
-    {
-        return view('properties.create');
-    }
 
     public function store(Request $request)
     {
