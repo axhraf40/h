@@ -14,7 +14,7 @@ class CreateOwnersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('phone')->nullable(); // Ajoutez cette ligne pour la colonne `phone`
+            $table->string('phone')->nullable(); 
             $table->timestamps();
         });
     }

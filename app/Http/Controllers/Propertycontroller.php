@@ -35,26 +35,4 @@ class PropertyController extends Controller
         return view('properties.show', compact('property'));
     }
 
-    public function edit(Property $property)
-    {
-        return view('properties.edit', compact('property'));
-    }
-
-    public function update(Request $request, Property $property)
-    {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'price' => 'required|numeric',
-            'location' => 'required|string',
-        ]);
-
-        $property->update($request->all());
-        return redirect()->route('properties.index')->with('success', 'Property updated successfully!');
-    }
-
-    public function destroy(Property $property)
-    {
-        $property->delete();
-        return redirect()->route('properties.index')->with('success', 'Property deleted successfully!');
-    }
 }
