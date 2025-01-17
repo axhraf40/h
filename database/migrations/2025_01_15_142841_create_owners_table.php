@@ -1,5 +1,3 @@
-// database/migrations/2025_01_15_142841_create_owners_table.php
-
 <?php
 
 use Illuminate\Database\Migrations\Migration;
